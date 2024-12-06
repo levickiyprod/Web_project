@@ -1,0 +1,104 @@
+/* Загальні стилі сторінки */
+.page {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background: url('https://ru.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2024/central/collections/women-scarves/Women_Scarves_WW_HP_Loop_20241011_DI3.jpg?wid=1440') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-img {
+    height: 50px;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header__phone {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.intro {
+    text-align: center;
+    padding: 20px;
+}
+
+.intro__title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.intro__text {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button--primary {
+    border-color: #007bff;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+.button--primary:hover {
+    background-color: #007bff;
+    border-color: #0056b3;
+    color: #fff;
+}
+
+.button--nav {
+    padding: 8px 15px;
+    font-size: 1rem;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button--nav:hover {
+    background-color: #007bff;
+    color: #fff;
+}

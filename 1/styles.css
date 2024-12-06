@@ -1,0 +1,90 @@
+/* Основний стиль для сторінки */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* Заголовок таблиці */
+caption {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #444;
+}
+
+/* Стиль таблиці */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Заголовки стовпців */
+thead th {
+  background-color: #009688;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Заголовки рядків */
+th[scope="row"] {
+  background-color: #e0f2f1;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid #ddd;
+  vertical-align: top;
+}
+
+/* Клітинки тіла таблиці */
+td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  vertical-align: top;
+  white-space: pre-line; /* Відображення переносу рядків */
+}
+
+/* Альтернативний колір рядків */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* Наведення на рядок */
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Вирівнювання тексту в комірках */
+td, th {
+  vertical-align: middle;
+}
+
+/* Мобільна адаптація */
+@media screen and (max-width: 768px) {
+  table {
+      font-size: 14px;
+  }
+
+  caption {
+      font-size: 18px;
+  }
+
+  td, th {
+      padding: 5px;
+  }
+}

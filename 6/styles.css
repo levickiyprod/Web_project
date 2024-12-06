@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #87CEEB; /* Початкове небо */
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.scene {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    width: 300%;
+    height: 100%;
+    background: url('https://images.unsplash.com/photo-1580056782825-20e4a4477d9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1600') no-repeat center center;
+    background-size: cover;
+    animation: moveBackground 10s linear infinite;
+}
+
+.pokemon {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    animation: jump 2s ease-in-out infinite, movePokemon 4s linear infinite alternate;
+}
+
+.pokemon img {
+    height: 120px;
+    display: block;
+}
+
+@keyframes moveBackground {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes movePokemon {
+    from {
+        left: 10%;
+    }
+    to {
+        left: 80%;
+    }
+}
+
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px); 
+    }
+}

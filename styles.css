@@ -1,0 +1,186 @@
+
+
+/* Загальні стилі */
+body {
+    font-family: 'LegendeC Plain', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eaeaea;
+    color: #333;
+}
+
+h1, h2 {
+    font-family: 'LegendeC Plain', sans-serif;
+}
+
+/* Заголовок сторінки */
+header {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 5px solid #00aaff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Меню навігації */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#about img {
+    width: 500px;
+    height: 500px;
+    border-radius: 5%;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li a:hover {
+    background-color: #00aaff;
+    color: #fff;
+}
+
+/* Секція "Про мене" */
+section {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 50px;
+    max-width: 800px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#about {
+    text-align: center;
+}
+
+
+
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 50px 20px;
+}
+
+.side-image {
+    position: absolute;
+    top: 75.5%;
+    transform: translateY(-50%);
+    width: 20vw; /* Масштабування зображення за шириною екрану */
+    max-width: 300px; /* Максимальна ширина зображення */
+    height: auto; /* Пропорційна висота */
+}
+
+.side-image.left {
+    left: 0; /* Розташування зліва */
+}
+
+.side-image.right {
+    right: 0; /* Розташування справа */
+}
+
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Секція "Практичні роботи" */
+#works h2 {
+    text-align: center;
+    color: #00aaff;
+    margin-bottom: 20px;
+}
+
+#works ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+#works ul li {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#works ul li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+#works ul li a {
+    text-decoration: none;
+    color: #00aaff;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Футер */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+.language-switcher {
+    text-align: right;
+    margin: 10px 20px;
+}
+
+.language-switcher button {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.3s;
+}
+
+.language-switcher button:hover {
+    background-color: #007acc;
+}
